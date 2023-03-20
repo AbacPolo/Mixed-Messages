@@ -43,7 +43,7 @@ const createAnswers = () => {
   oldFamous = newFamous;
   answers = [
     `I play parchis with ${newFamous} and I almost always win.`,
-    `I have the strength of 10 ${newFamous}'s.`,
+    `I have the strength of 10 ${newFamous}s.`,
     `I carved ${newFamous}'s face on a pumpkin.`,
     `Looking at ${newFamous} face for an hour... that is my dream.`,
     `${newFamous}, in the livingroom, with a crowbar.`,
