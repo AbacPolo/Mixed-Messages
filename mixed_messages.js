@@ -12,8 +12,10 @@ const questions = [
   "Are you a team player?",
   "What are your salary expectations?",
 ];
+let oldQuestion = '';
 
 let answers = [];
+let oldAnswer = '';
 
 const personalities = [
   "Taylor Swift",
@@ -27,13 +29,18 @@ const personalities = [
   "Buggs Bunny",
   "Rosalia",
 ];
+let oldFamous = '';
 
 const randomNumber = () => Math.floor(Math.random() * 10);
 
 const getString = (arr) => arr[randomNumber()];
 
 const createAnswers = () => {
-  let newFamous = getString(personalities);
+  let newFamous = '';
+  do {
+    newFamous = getString(personalities);
+  } while (newFamous === oldFamous);
+  oldFamous = newFamous;
   answers = [
     `I play parchis with ${newFamous} and I almost always win.`,
     `I have the strength of 10 ${newFamous}'s.`,
@@ -50,8 +57,16 @@ const createAnswers = () => {
 
 const createJoke = () => {
   createAnswers();
-  let newQuestion = 'Interviewer: ' + getString(questions);
-  let newAnswer = 'You: ' + getString(answers);
+  let newQuestion = '';
+  let newAnswer = '';
+  do {
+    newQuestion = 'Interviewer: ' + getString(questions);
+  } while (newQuestion === oldQuestion);
+  oldQuestion = newQuestion;
+  do {
+    newAnswer = 'You: ' + getString(answers);
+  } while (newAnswer === oldAnswer);
+  oldAnswer = newAnswer;
 
   document.getElementById("interviewer").innerHTML = newQuestion;
   document.getElementById("yourAnswer").innerHTML = newAnswer;
