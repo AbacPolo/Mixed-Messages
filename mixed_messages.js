@@ -54,8 +54,7 @@ const createJoke = () => {
   person = getPersonalities();
   let newAnswer = getAnswers(person);
 
-  console.log(`Interviewer: ${newQuestion}`);
-  console.log(`You: ${newAnswer}`);
+  return `Interviewer: ${newQuestion} You: ${newAnswer}`;
 };
 
 createJoke();
