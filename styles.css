@@ -1,0 +1,49 @@
+/* Universal Styles */
+  /* Basic styles for html, body, headings, buttons, images, ... */
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden; /* hide horizontal overflow */
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+/* Header */
+
+/* Main */
+
+/* Footer */
