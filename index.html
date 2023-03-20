@@ -6,7 +6,10 @@
     <!-- browser tab image -->
     <link rel="shortcut icon" href="" type="image/x-icon" />
 
-    <!--stylesheet-->
+    <!--JavaScript-->
+    <script src="mixed_messages.js"></script>
+
+    <!--stylesheets-->
     <link rel="stylesheet" href="styles.css" />
 
     <!--fonts-->
@@ -17,11 +20,22 @@
     <meta charset="UTF-8" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <h1>INTERVIEW PREPARATION</h1>
+      <h2>Best answers to the worst questions</h2>
+    </header>
 
     <nav></nav>
 
-    <main></main>
+    <main>
+      <div class="answerContainer">
+        <div class="answerDisplay">
+          <p id="interviewer"></p>
+          <p id="yourAnswer"></p>
+        </div>
+      </div>
+      <button id="generateInterview" onclick="createJoke()">JOKE</button>
+    </main>
 
     <footer></footer>
   </body>

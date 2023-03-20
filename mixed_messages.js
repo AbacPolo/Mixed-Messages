@@ -28,9 +28,9 @@ const personalities = [
 
 const randomNumber = () => Math.floor(Math.random() * 10);
 
-const getPersonalities = () => personalities[randomNumber()];
+const getString = (arr) => arr[randomNumber()];
 
-let newFamous = getPersonalities();
+let newFamous = getString(personalities);
 
 const answers = [
   `I play parchis with ${newFamous} and I almost always win`,
@@ -45,16 +45,14 @@ const answers = [
   `I've been ${newFamous}'s grape peeler for 20 years! I think I deserve a raise!`,
 ];
 
-const getQuestion = () => questions[randomNumber()];
-
-const getAnswers = (famous) => answers[randomNumber()];
-
 const createJoke = () => {
-  let newQuestion = getQuestion();
-  person = getPersonalities();
-  let newAnswer = getAnswers(person);
+  let newQuestion = 'Interviewer: ' + getString(questions);
+  let newAnswer = 'You: ' + getString(answers);
 
-  return `Interviewer: ${newQuestion} You: ${newAnswer}`;
+  document.getElementById("interviewer").innerHTML = newQuestion;
+  document.getElementById("yourAnswer").innerHTML = newAnswer;
+  console.log(newQuestion);
+  console.log(newAnswer);
 };
 
-createJoke();
+//createJoke();
