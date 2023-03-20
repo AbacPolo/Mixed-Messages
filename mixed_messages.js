@@ -35,15 +35,15 @@ const getString = (arr) => arr[randomNumber()];
 const createAnswers = () => {
   let newFamous = getString(personalities);
   answers = [
-    `I play parchis with ${newFamous} and I almost always win`,
-    `I have the strength of 10 ${newFamous}'s`,
-    `I carved ${newFamous}'s face on a pumpkin`,
-    `Looking at ${newFamous} face for an hour... that is my dream`,
-    `${newFamous}, in the livingroom, with a crowbar`,
-    `"Do or do not, there is no try" -${newFamous}`,
-    `"I have a dream!" -${newFamous}`,
-    `I love money more than ${newFamous}`,
-    `I don't really like ${newFamous} and I'm tired of hidding it`,
+    `I play parchis with ${newFamous} and I almost always win.`,
+    `I have the strength of 10 ${newFamous}'s.`,
+    `I carved ${newFamous}'s face on a pumpkin.`,
+    `Looking at ${newFamous} face for an hour... that is my dream.`,
+    `${newFamous}, in the livingroom, with a crowbar.`,
+    `"Do or do not, there is no try" - ${newFamous}.`,
+    `"I have a dream!" - ${newFamous}.`,
+    `I love money more than ${newFamous}.`,
+    `I don't really like ${newFamous} and I'm tired of hidding it.`,
     `I've been ${newFamous}'s grape peeler for 20 years! I think I deserve a raise!`,
   ];
 }
